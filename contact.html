@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>संपर्क | ग्रामपंचायत लिहिदा</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#9F1239", // Royal Maroon
+              accent: "#D97706", // Rich Gold
+              background: "#F3F4F6", // Light Gray (Matches Footer/Header)
+            },
+            fontFamily: {
+              heading: ["Khand", "sans-serif"],
+              body: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-background font-body text-gray-800">
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header
+      id="navbar"
+      class="fixed w-full z-50 transition-all duration-300 bg-gradient-to-b from-gray-900 to-primary backdrop-blur-md shadow-md"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <h1 class="font-heading text-2xl text-white">ग्रामपंचायत लिहिदा</h1>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 font-medium text-white">
+          <a href="index.html" class="hover:text-accent">मुखपृष्ठ</a>
+          <a href="about.html" class="hover:text-accent">माहिती</a>
+          <a href="services.html" class="hover:text-accent">सेवा</a>
+          <a href="schemes.html" class="hover:text-accent">योजना</a>
+          <a href="contact.html" class="hover:text-accent">संपर्क</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+        <a class="block px-6 py-3 border-b" href="index.html">मुखपृष्ठ</a>
+        <a class="block px-6 py-3 border-b" href="about.html">माहिती</a>
+        <a class="block px-6 py-3 border-b" href="services.html">सेवा</a>
+        <a class="block px-6 py-3 border-b" href="schemes.html">योजना</a>
+        <a class="block px-6 py-3" href="contact.html">संपर्क</a>
+      </div>
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+    <section class="bg-primary/20 py-12 pt-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="font-heading text-3xl text-primary text-center">संपर्क</h2>
+        <p class="text-gray-600 text-center">महत्वाचे संपर्क आणि अधिकारी</p>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTS SECTION ================= -->
+    <section class="py-16 max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Sarpanch -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <img
+            src="./images/sarpanch.jpeg"
+            alt="Sarpanch"
+            class="w-32 h-32 rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-heading text-xl text-primary">सरपंच</h3>
+          <p class="font-body">श्री.देवकुमार सुदामराव बुरंगे</p>
+          <p class="font-body text-gray-500 flex items-center justify-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            9860619754
+          </p>
+        </div>
+
+        <!-- Upsarpanch -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <img
+            src="./images/upsarpanch.jpeg"
+            alt="Upsarpanch"
+            class="w-32 h-32 rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-heading text-xl text-primary">उपसरपंच</h3>
+          <p class="font-body">सौ.सगुणाताई गुणवंतराव पैठणकर</p>
+          <p class="font-body text-gray-500 flex items-center justify-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            9545611004
+          </p>
+        </div>
+
+        <!-- Gram Sevak -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <img
+            src="./images/gramsevak.jpeg"
+            alt="Gram Sevak"
+            class="w-32 h-32 rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-heading text-xl text-primary">ग्रामपंचायत अधिकारी</h3>
+          <p class="font-body">श्री.ज्ञानेश्वर गोपाळराव पाथ्रीकर</p>
+          <p class="font-body text-gray-500 flex items-center justify-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            ९८७६५४३२२०
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Google Map SECTION ================= -->
+    <section class="py-16 max-w-7xl mx-auto px-6">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29758.263521167883!2d77.96188052303728!3d21.20078000843461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4263434d7ad0b%3A0xbcc5a960742c4908!2sLihida%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1766133060806!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="bg-gray-900 text-white py-12 text-center">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        <div>
+          <h4 class="font-heading text-xl mb-4">कार्यालय पत्ता</h4>
+          <p class="text-white/90">ग्रामपंचायत लिहिदा,<br />तालुका: मोर्शी, जिल्हा: अमरावती</p>
+        </div>
+        <div>
+          <h4 class="font-heading text-xl mb-4">त्वरित दुवे</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-accent transition">मुखपृष्ठ</a></li>
+            <li><a href="about.html" class="hover:text-accent transition">माहिती</a></li>
+            <li><a href="services.html" class="hover:text-accent transition">सेवा</a></li>
+            <li><a href="schemes.html" class="hover:text-accent transition">योजना</a></li>
+            <li><a href="contact.html" class="hover:text-accent transition">संपर्क</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-xl mb-4">कार्यालयीन वेळ</h4>
+          <p class="text-white/90">
+            सोमवार ते शनिवार: स. ९:०० ते सा. ६:३०<br />
+            रविवार: सुट्टी<br />
+            (सरकारी सुट्ट्या वगळता)
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/20 mt-8 pt-6">
+        <p class="text-center text-sm text-white/90">
+        © 2025 ग्रामपंचायत लिहिदा. सर्व हक्क राखीव.
+      </p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+  </body>
+</html>

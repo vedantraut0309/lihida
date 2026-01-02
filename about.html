@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>माहिती | ग्रामपंचायत लिहिदा</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#9F1239", // Royal Maroon
+              accent: "#D97706", // Rich Gold
+              background: "#F3F4F6", // Light Gray (Matches Footer/Header)
+            },
+            fontFamily: {
+              heading: ["Khand", "sans-serif"],
+              body: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-background font-body text-gray-800">
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header
+      id="navbar"
+      class="fixed w-full z-50 transition-all duration-300 bg-gradient-to-b from-gray-900 to-primary backdrop-blur-md shadow-md"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <h1 class="font-heading text-2xl text-white">ग्रामपंचायत लिहिदा</h1>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 font-medium text-white">
+          <a href="index.html" class="hover:text-accent">मुखपृष्ठ</a>
+          <a href="about.html" class="hover:text-accent">माहिती</a>
+          <a href="services.html" class="hover:text-accent">सेवा</a>
+          <a href="schemes.html" class="hover:text-accent">योजना</a>
+          <a href="contact.html" class="hover:text-accent">संपर्क</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+        <a class="block px-6 py-3 border-b" href="index.html">मुखपृष्ठ</a>
+        <a class="block px-6 py-3 border-b" href="about.html">माहिती</a>
+        <a class="block px-6 py-3 border-b" href="services.html">सेवा</a>
+        <a class="block px-6 py-3 border-b" href="schemes.html">योजना</a>
+        <a class="block px-6 py-3" href="contact.html">संपर्क</a>
+      </div>
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+    <section class="bg-primary/20 py-12 pt-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="font-heading text-3xl text-primary text-center mb-4">
+          आमच्याबद्दल
+        </h2>
+        <p class="text-gray-600 text-center">
+          ग्रामपंचायत टीम आणि सदस्यांची माहिती
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= TEAM SECTION ================= -->
+    <section class="py-16 max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Sarpanch -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <img
+            src="./images/sarpanch.jpeg"
+            alt="Sarpanch"
+            class="w-32 h-32 rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-heading text-xl text-primary">सरपंच</h3>
+          <p class="font-body">श्री.देवकुमार सुदामराव बुरंगे</p>
+        </div>
+
+        <!-- Upsarpanch -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <img
+            src="./images/upsarpanch.jpeg"
+            alt="Upsarpanch"
+            class="w-32 h-32 rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-heading text-xl text-primary">उपसरपंच</h3>
+          <p class="font-body">सौ.सगुणाताई गुणवंतराव पैठणकर</p>
+        </div>
+
+        <!-- Gram Sevak -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <img
+            src="./images/gramsevak.jpeg"
+            alt="Gram Sevak"
+            class="w-32 h-32 rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-heading text-xl text-primary">ग्रामपंचायत अधिकारी</h3>
+          <p class="font-body">श्री.ज्ञानेश्वर गोपाळराव पाथ्रीकर</p>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <h3 class="font-heading text-2xl text-center text-primary mb-8">
+          ग्रामपंचायत सदस्य
+        </h3>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center"
+        >
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="font-body">सुशीलाताई हरिभाऊजी कवाडे</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="font-body">शोभाताई राजेंद्र तायवाडे</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="font-body">श्री शिवाजी भीमरावजी कळसकर</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="font-body">श्री.सुरेश महादेवराव चांदणे</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <h3 class="font-heading text-2xl text-center text-primary mb-8">
+          इतर अधिकारी
+        </h3>
+        <div class="flex flex-wrap justify-center gap-6 text-center">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <img
+              src="./images/lipik.jpeg"
+              alt="Upsarpanch"
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+            />
+            <h4 class="font-heading text-lg">लिपिक</h4>
+            <p class="font-body">ओमप्रकाश रुपरावजी पठाडे</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <h3 class="font-heading text-2xl text-center text-primary mb-8">
+          लोकसंख्या आणि मालमत्ता
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Population Stats -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h4 class="font-heading text-xl text-primary mb-4 border-b pb-2">
+              👥 लोकसंख्या (२०११ जनगणनेनुसार)
+            </h4>
+            <ul class="space-y-3 font-body">
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-gray-600">एकूण लोकसंख्या:</span>
+                <span class="font-semibold">1180</span>
+              </li>
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-gray-600">पुरुष:</span>
+                <span class="font-semibold">680</span>
+              </li>
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-gray-600">स्त्रिया:</span>
+                <span class="font-semibold">500</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Assets Stats -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h4 class="font-heading text-xl text-primary mb-4 border-b pb-2">
+              🏠 गावची मालमत्ता व सुविधा
+            </h4>
+            <ul class="space-y-3 font-body">
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-gray-600">ग्रामपंचायत भवन:</span>
+                <span class="font-semibold">1</span>
+              </li>
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-gray-600">जिल्हा परिषद शाळा:</span>
+                <span class="font-semibold">1</span>
+              </li>
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-gray-600">अंगणवाडी:</span>
+                <span class="font-semibold">1</span>
+              </li>
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-gray-600">एकूण घरे</span>
+                <span class="font-semibold">345</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <h3 class="font-heading text-2xl text-center text-primary mb-8">
+          विकास कामे
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-heading text-xl text-primary mb-2">
+              सिमेंट काँक्रीट रोड
+            </h3>
+            <p class="font-body">
+              गावातील अंतर्गत रस्त्यांचे काँक्रीटीकरण करून दळणवळण सुलभ केले.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-heading text-xl text-primary mb-2">🌳वृक्षारोपण</h3>
+            <p class="font-body">
+              पर्यावरणाचा समतोल राखण्यासाठी गावात मोठ्या प्रमाणात वृक्षारोपण
+              कार्यक्रम राबविण्यात आला.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-heading text-xl text-primary mb-2">
+              💧जल जीवन मिशन
+            </h3>
+            <p class="font-body">
+              हर घर जल योजनेअंतर्गत प्रत्येक घरात शुद्ध आणि सुरक्षित पिण्याचे
+              पाणी पोहोचवले.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-heading text-xl text-primary mb-2">
+              🧹स्वच्छता अभियान
+            </h3>
+            <p class="font-body">
+              गाव स्वच्छ आणि सुंदर ठेवण्यासाठी नियमित स्वच्छता मोहीम राबवली
+              जाते.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-heading text-xl text-primary mb-2">
+              🩺आरोग्य तपासणी
+            </h3>
+            <p class="font-body">
+              नागरिकांच्या आरोग्याची काळजी घेण्यासाठी वेळोवेळी आरोग्य तपासणी
+              शिबिरांचे आयोजन केले जाते.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-heading text-xl text-primary mb-2">💡पथदिवे</h3>
+            <p class="font-body">
+              गावातील रस्त्यांवर रात्रीच्या वेळी प्रकाशासाठी नवीन पथदिवे
+              बसवण्यात आले.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="bg-gray-900 text-white py-12 text-center">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        <div>
+          <h4 class="font-heading text-xl mb-4">कार्यालय पत्ता</h4>
+          <p class="text-white/90">
+            ग्रामपंचायत लिहिदा,<br />तालुका: मोर्शी, जिल्हा: अमरावती
+          </p>
+        </div>
+        <div>
+          <h4 class="font-heading text-xl mb-4">त्वरित दुवे</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="hover:text-accent transition"
+                >मुखपृष्ठ</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-accent transition"
+                >माहिती</a
+              >
+            </li>
+            <li>
+              <a href="services.html" class="hover:text-accent transition"
+                >सेवा</a
+              >
+            </li>
+            <li>
+              <a href="schemes.html" class="hover:text-accent transition"
+                >योजना</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-accent transition"
+                >संपर्क</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-xl mb-4">कार्यालयीन वेळ</h4>
+          <p class="text-white/90">
+            सोमवार ते शनिवार: स. ९:०० ते सा. ६:३०<br />
+            रविवार: सुट्टी<br />
+            (सरकारी सुट्ट्या वगळता)
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/20 mt-8 pt-6">
+        <p class="text-center text-sm text-white/90">
+          © 2025 ग्रामपंचायत लिहिदा. सर्व हक्क राखीव.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+  </body>
+</html>

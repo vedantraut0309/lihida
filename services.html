@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>सेवा - ग्रामपंचायत लिहिदा</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#9F1239", // Royal Maroon
+              accent: "#D97706", // Rich Gold
+              background: "#F3F4F6", // Light Gray (Matches Footer/Header)
+            },
+            fontFamily: {
+              heading: ["Khand", "sans-serif"],
+              body: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background font-body text-gray-800">
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header
+      id="navbar"
+      class="sticky top-0 w-full z-50 transition-all duration-300 bg-gradient-to-b from-gray-900 to-primary backdrop-blur-md shadow-md"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <h1 class="font-heading text-2xl text-white">ग्रामपंचायत लिहिदा</h1>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 font-medium text-white">
+          <a href="index.html" class="hover:text-accent">मुखपृष्ठ</a>
+          <a href="about.html" class="hover:text-accent">माहिती</a>
+          <a href="services.html" class="text-accent">सेवा</a>
+          <a href="schemes.html" class="hover:text-accent">योजना</a>
+          <a href="contact.html" class="hover:text-accent">संपर्क</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+        <a class="block px-6 py-3 border-b" href="index.html">मुखपृष्ठ</a>
+        <a class="block px-6 py-3 border-b" href="about.html">माहिती</a>
+        <a class="block px-6 py-3 border-b" href="services.html">सेवा</a>
+        <a class="block px-6 py-3 border-b" href="schemes.html">योजना</a>
+        <a class="block px-6 py-3" href="contact.html">संपर्क</a>
+      </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+      <h1 class="font-heading text-3xl text-center text-primary mb-12">
+        नागरिक सेवा
+      </h1>
+
+      <div class="max-w-4xl mx-auto">
+        <!-- Category 1: Certificates -->
+        <h2
+          class="font-heading text-2xl text-gray-700 mb-6 border-b-2 border-primary pb-2"
+        >
+          १. प्रमाणपत्रे आणि नोंदणी
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          >
+            <h3 class="font-heading text-xl text-primary mb-3">
+              📝 जन्म/मृत्यू प्रमाणपत्र
+            </h3>
+            <p class="text-gray-600 mb-2">
+              नवीन नोंदणी, डुप्लिकेट प्रत आणि दुरुस्तीसाठी अर्ज.
+            </p>
+            <p class="text-sm font-semibold">
+              प्रक्रिया:
+              <span class="font-normal"
+                >अर्ज/कागदपत्रे कार्यालयात सादर करा.</span
+              >
+            </p>
+            <p class="text-sm font-semibold">
+              फी: <span class="font-normal">शासनाच्या नियमानुसार.</span>
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          >
+            <h3 class="font-heading text-xl text-primary mb-3">
+              💍 विवाह नोंदणी प्रमाणपत्र
+            </h3>
+            <p class="text-gray-600 mb-2">
+              विवाह झाल्याची अधिकृत नोंदणी आणि प्रमाणपत्र मिळवणे.
+            </p>
+            <p class="text-sm font-semibold">
+              आवश्यक:
+              <span class="font-normal"
+                >वधू-वरांची ओळखपत्रे, लग्नाची नोंद.</span
+              >
+            </p>
+            <p class="text-sm font-semibold">
+              वेळ: <span class="font-normal">विवाहानंतर ९० दिवसांच्या आत.</span>
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          >
+            <h3 class="font-heading text-xl text-primary mb-3">
+              📜 रहिवासी/दारिद्र्यरेषेचे प्रमाणपत्र
+            </h3>
+            <p class="text-gray-600 mb-2">
+              शासकीय योजना व स्थानिक रहिवासी पुराव्यासाठी आवश्यक.
+            </p>
+            <p class="text-sm font-semibold">
+              टीप:
+              <span class="font-normal"
+                >केवळ ग्रामपंचायत हद्दीतील नागरिकांसाठी.</span
+              >
+            </p>
+            <p class="text-sm font-semibold">
+              अटी लागू:
+              <span class="font-normal">ग्रामसेवक यांच्याशी संपर्क साधा.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Category 2: Tax and Finance -->
+        <h2
+          class="font-heading text-2xl text-gray-700 mb-6 border-b-2 border-primary pb-2"
+        >
+          २. कर भरणे आणि आर्थिक
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          >
+            <h3 class="font-heading text-xl text-primary mb-3">
+              💰 घरपट्टी/पाणीपट्टी कर भरणे
+            </h3>
+            <p class="text-gray-600 mb-2">
+              वार्षिक घरपट्टी आणि पाणीपट्टीची रक्कम जमा करणे.
+            </p>
+            <p class="text-sm font-semibold">
+              सवलत:
+              <span class="font-normal">वेळेवर कर भरल्यास सवलत मिळते.</span>
+            </p>
+            <p class="text-sm font-semibold">
+              ऑनलाइन सुविधा: <span class="font-normal">लवकरच येत आहे!</span>
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          >
+            <h3 class="font-heading text-xl text-primary mb-3">
+              💧 नवीन नळ कनेक्शन
+            </h3>
+            <p class="text-gray-600 mb-2">
+              नवीन घरगुती पाणी कनेक्शनसाठी अर्ज करण्याची प्रक्रिया.
+            </p>
+            <p class="text-sm font-semibold">
+              विभाग:
+              <span class="font-normal">पाणीपुरवठा विभाग, ग्रामपंचायत.</span>
+            </p>
+            <p class="text-sm font-semibold">
+              योजना: <span class="font-normal">जल जीवन मिशन.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Category 3: Permissions and Administrative -->
+        <h2
+          class="font-heading text-2xl text-gray-700 mb-6 border-b-2 border-primary pb-2"
+        >
+          ३. परवानग्या आणि प्रशासकीय
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          >
+            <h3 class="font-heading text-xl text-primary mb-3">
+              🏗️ बांधकाम परवानगी (NOC)
+            </h3>
+            <p class="text-gray-600 mb-2">
+              नवीन बांधकाम किंवा दुरुस्तीसाठी ग्रामपंचायतीची ना हरकत प्रमाणपत्र.
+            </p>
+            <p class="text-sm font-semibold">
+              नियंत्रण:
+              <span class="font-normal">बांधकाम नियमावली ग्रामपंचायत.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="bg-gray-900 text-white py-12 mt-16 text-center">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        <div>
+          <h4 class="font-heading text-xl mb-4">कार्यालय पत्ता</h4>
+          <p class="text-white/90">
+            ग्रामपंचायत लिहिदा,<br />तालुका : मोर्शी, जिल्हा : अमरावती<br />
+          </p>
+        </div>
+        <div>
+          <h4 class="font-heading text-xl mb-4">त्वरित दुवे</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="hover:text-accent transition"
+                >मुखपृष्ठ</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-accent transition"
+                >माहिती</a
+              >
+            </li>
+            <li>
+              <a href="services.html" class="hover:text-accent transition"
+                >सेवा</a
+              >
+            </li>
+            <li>
+              <a href="schemes.html" class="hover:text-accent transition"
+                >योजना</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-accent transition"
+                >संपर्क</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-xl mb-4">कार्यालयीन वेळ</h4>
+          <p class="text-white/90">
+            सोमवार ते शनिवार: स. ९:०० ते सा. ६:३०<br />
+            रविवार: सुट्टी<br />
+            (सरकारी सुट्ट्या वगळता)
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/20 mt-8 pt-6">
+        <p class="text-center text-sm text-white/90">
+          © 2025 ग्रामपंचायत लिहिदा. सर्व हक्क राखीव.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
